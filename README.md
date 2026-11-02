@@ -107,13 +107,10 @@ Settings come from environment variables, or from `.env` for local development.
 
 ### Using Postgres
 
-No code changes are needed, but two things have to be right:
-
-1. Install the Postgres driver, which is not in `requirements.txt` because local
-   development doesn't need it: `pip install "psycopg[binary]"`
-2. Set `DATABASE_URL` to a URL starting with `postgresql://`. Some hosts hand out
-   URLs starting with `postgres://`, which SQLAlchemy rejects, so change that part
-   if yours does.
+No code changes are needed. The Postgres driver is already in `requirements.txt`,
+so just set `DATABASE_URL` to a URL starting with `postgresql://`. Some hosts hand
+out URLs starting with `postgres://`, which SQLAlchemy rejects, so change that part
+if yours does.
 
 ## Endpoints
 

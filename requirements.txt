@@ -7,6 +7,8 @@ passlib[bcrypt]==1.7.4
 # passlib is not compatible with newer bcrypt releases, so bcrypt stays on 4.0.1.
 bcrypt==4.0.1
 python-jose[cryptography]==3.5.0
+# The Postgres driver, used when DATABASE_URL points to a Postgres database.
+psycopg[binary]==3.3.6
 pytest==9.2.0
 # Required by FastAPI's TestClient.
 httpx2==2.16.0
