@@ -1,0 +1,11 @@
+# Secrets
+.env
+
+# Local database
+*.db
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/

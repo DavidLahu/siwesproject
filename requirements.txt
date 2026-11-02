@@ -1,0 +1,12 @@
+fastapi==0.162.0
+uvicorn==0.54.0
+sqlalchemy==2.1.6
+pydantic[email]==2.14.2
+pydantic-settings==2.16.2
+passlib[bcrypt]==1.7.4
+# passlib is not compatible with newer bcrypt releases, so bcrypt stays on 4.0.1.
+bcrypt==4.0.1
+python-jose[cryptography]==3.5.0
+pytest==9.2.0
+# Required by FastAPI's TestClient.
+httpx2==2.16.0
